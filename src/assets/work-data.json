@@ -1,0 +1,26 @@
+[
+    {
+        "name": "personas",
+        "image": "images/project1.png",
+        "description": "worked on understanding clients and ui design",
+        "id": 1
+    }, 
+    {
+        "name": "responsive redesign",
+        "image": "images/project2.jpeg",
+        "description": "worked on better understanding layouts for different devices",
+        "id": 2
+    },
+    {
+        "name": "iterative design and evaluation",
+        "image": "images/project3.png",
+        "description": "started a design for a start up company from scratch",
+        "id": 3
+    },
+    {
+        "name": "devlopment",
+        "image": "images/project4.jpeg",
+        "description": "worked with react in javascript to build a functional plant shop",
+        "id": 4
+    }
+]

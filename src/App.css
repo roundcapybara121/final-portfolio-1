@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+.App {
+  text-align: center;
+  height: 280vh;
+}
+
+.navbar {
+  /* background-color: white;
+  opacity: 10%; */
+  width: 100%;
+  color: black;
+  /* postion elements using flexbox */
+  display: flex;
+  justify-content: left;
+  height: 3rem;
+  padding: 10px;
+  position: fixed;
+  backdrop-filter: blur(3px);
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-item {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #cab9f6;
+}
+
+.logo {
+  height: 80%;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+/* ***************** start of introduction section ***************** */
+.intro-section {
+  height: 100vh;
+  background-image: linear-gradient(132deg, #FAB1B3 10%, #FAF8B1 40%, #B1FAF8 50%);
+  background-size: 300%;
+  background-position: left;
+  display: block;
+  animation: bg-animation 5s infinite alternate;
+}
+
+/*animation that moves the gradient background image*/
+@keyframes bg-animation {
+  0% {
+    background-position: left
+  }
+
+  100% {
+    background-position: right
+  }
+}
+
+.intro-text-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.intro-text {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 600px;
+  text-align: left;
+  box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.intro-h1 {
+  font-weight: 500;
+}
+
+.intro-h3 {
+  font-weight: 300;
+}
+/* ***************** start of project/work section ***************** */
+
+.work-section {
+  text-align: canter;
+}
+
+.work-title {
+  margin: 100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  /* color: #c77dff; */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  box-sizing: border-box;
+
+  display: grid;
+  /* says we want 2 equal width columns */
+  grid-template-columns: repeat(2, 1fr);
+  /* says we want 2 equal height? rows */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  background-color: #eff0f3;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card-button {
+  background-color: #cab9f6;
+  border: none;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.card-button:hover {
+  background-color: #FAB1B3;
+}

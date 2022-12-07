@@ -1,0 +1,64 @@
+.App {
+    text-align: center;
+    height: 200vh;
+  }
+  
+  .navbar {
+    /* background-color: white;
+    opacity: 10%; */
+    width: 100%;
+    color: black;
+    /* postion elements using flexbox */
+    display: flex;
+    justify-content: left;
+    height: 3rem;
+    padding: 10px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+  }
+  
+  .nav-list {
+    list-style-type: none;
+  }
+  
+  .logo {
+    height: 80%;
+    padding-top: 5px;
+    padding-left: 30px;
+  }
+  
+  /* ***************** start of introduction section ***************** */
+  .intro-section {
+    height: 100vh;
+    background-image: linear-gradient(132deg, blue 5%, red 40%, pink 100%);
+    background-size: 300%;
+    background-position: left;
+    display: block;
+    animation: bg-animation 5s infinite alternate;
+  }
+  
+  /*animation that moves the gradient background image*/
+  @keyframes bg-animation {
+    0% {
+      background-position: left
+    }
+  
+    100% {
+      background-position: right
+    }
+  }
+  
+  .intro-text-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+  }
+  
+  .intro-text {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    text-align: left;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+  }
